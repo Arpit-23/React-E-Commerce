@@ -30,6 +30,7 @@ function CartItem({item, itemIndex}) {
           </div>
         </div>
       </div>
+      <div className='h-1 text-black'></div>
     </div>
   )
 }

@@ -18,7 +18,7 @@ function Product({post}) {
 
   return (
     <div className='flex flex-col items-center justify-between 
-    hover:scale-110 transition duration-300 ease-in gap-3 p-4 mt-10 ml-5 rounded-xl outline'>
+    hover:scale-110 transition duration-300 ease-in gap-3 p-4 mt-10 ml-5 rounded-xl outline group'>
       <div>
         <p className="text-gray-700 font-semibold text-lg text-left truncate w-40 mt-1">{post.title}</p>
       </div>
@@ -36,7 +36,7 @@ function Product({post}) {
        className="text-gray-700 border-2 border-gray-700 rounded-full font-semibold 
           text-[12px] p-1 px-3 uppercase 
           hover:bg-gray-700
-          hover:text-white transition duration-300 ease-in"
+          hover:text-white transition duration-300 ease-in group-hover:bg-gray-700 group-hover:text-white grou" 
        onClick={removeFromCart}>
         Remove Item
        </button>):
@@ -44,7 +44,7 @@ function Product({post}) {
        className="text-gray-700 border-2 border-gray-700 rounded-full font-semibold 
           text-[12px] p-1 px-3 uppercase 
           hover:bg-gray-700
-          hover:text-white transition duration-300 ease-in"
+          hover:text-white transition duration-300 ease-in group-hover:bg-gray-700 group-hover:text-white"
        onClick={addToCart}>
         Add to Cart
        </button>)
